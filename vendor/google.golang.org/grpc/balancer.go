@@ -184,6 +184,9 @@ func (rr *roundRobin) watchAddrUpdates() error {
 				if addr == v.addr {
 					exist = true
 					grpclog.Println("grpc: The name resolver wanted to add an existing address: ", addr)
+
+					Println("address: ", addr)
+
 					break
 				}
 			}
